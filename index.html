@@ -2,103 +2,127 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <section>
-      <nav><img src="C:\Users\Owner\OneDrive\Desktop\javcss\FES.svg" alt="FES"/>
-      <ul>
-        <li><a href="#about">about</a></li>
-        <li><a href="#discord">discord</a></li>
-        <li><a href="#contact">contact</a></li>
-      </ul>
+      <nav>
+        <img
+          src="C:\Users\Owner\OneDrive\Desktop\javcss\FES.svg"
+          class="logo"
+          alt=""
+        />
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#discord">discord</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
       </nav>
       <header>
-        <div>
-          <h1>Best Place to Learn Frontend</h1>
-          <p>Go from absoluet beginner to pro with a simplified process.</p>
-          <button>Start Now</button>
-        </div>
-      </header>
-      <figure>
-        <img
-          src="C:\Users\Owner\OneDrive\Desktop\javcss\laptop.png"
-          alt="Home Page Image"
-        />
-      </figure>
-    </section>
-    <main>
-      <section id="#about">
-        <h2>About</h2>
-        <div>
-          <p>
-            Frontend Empire School is a platform dedicated to teaching frontend
-            development in a simplified and effective manner. Our mission is to
-            empower individuals with the skills they need to succeed in the
-            world of web development.
-          </p>
-          <p>
-            We offer a comprehensive curriculum that covers everything from the
-            basics of HTML, CSS, and JavaScript to advanced topics like
-            responsive design, accessibility, and performance optimization.
-            Whether you're a complete beginner or looking to enhance your
-            existing skills, FES has something for everyone.
-          </p>
+        <div class="row">
+          <div class="home__discription">
+            <h1>Best Place to Learn Frontend</h1>
+            <p class="subheader">
+              Go from absoluet beginner to pro with a simplified process.
+            </p>
+            <button class="home_discription_button">Start Now</button>
+          </div>
           <figure>
             <img
+              src="C:\Users\Owner\OneDrive\Desktop\javcss\laptop.png"
+              alt="Home Page Image"
+            />
+          </figure>
+        </div>
+      </header>
+    </section>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <div class="row">
+          <div class="section__description">
+            <div class="section__description--wrapper">
+              <p class="section--para">
+                Frontend Empire School is a platform dedicated to teaching
+                frontend development in a simplified and effective manner. Our
+                mission is to empower individuals with the skills they need to
+                succeed in the world of web development.
+              </p>
+              <p class="section--para">
+                We offer a comprehensive curriculum that covers everything from
+                the basics of HTML, CSS, and JavaScript to advanced topics like
+                responsive design, accessibility, and performance optimization.
+                Whether you're a complete beginner or looking to enhance your
+                existing skills, FES has something for everyone.
+              </p>
+            </div>
+          </div>
+          <figure class="about__image--wrapper">
+            <img
+              class="logo"
               src="C:\Users\Owner\OneDrive\Desktop\javcss\about.jpg"
               alt="About Image"
             />
           </figure>
         </div>
       </section>
-      <section
-        id="discord">
-
+      <section id="discord">
         <h2>Discord</h2>
-        <img
-          src="C:/Users/Owner/OneDrive/Desktop/javcss/discord.png"
-          alt="Discord Image"
-        />
-        <div>
-          <p>
-            Join our vibrant Discord community to connect with fellow learners,
-            share your progress, and get help from experienced developers. Our
-            Discord server is a great place to ask questions, participate in
-            discussions, and stay updated on the latest news and events from
-            Frontend Empire School.
-          </p>
-          <p>
-            Whether you're looking for study partners, project collaborators,
-            or just want to hang out with like-minded individuals, our Discord
-            community has something for everyone. Click the link below to join
-            us today!
-          </p>
+        <div class="row">
+          <div class="section__description">
+            <figure class="about__image--wrapper">
+              <img
+                src="C:/Users/Owner/OneDrive/Desktop/javcss/discord.png"
+                alt="Discord Image"
+              />
+            </figure>
+            <div class="description--wrapper">
+              <p class="section--para">
+                Join our vibrant Discord community to connect with fellow
+                learners, share your progress, and get help from experienced
+                developers. Our Discord server is a great place to ask
+                questions, participate in discussions, and stay updated on the
+                latest news and events from Frontend Empire School.
+              </p>
+              <p>
+                Whether you're looking for study partners, project
+                collaborators, or just want to hang out with like-minded
+                individuals, our Discord community has something for everyone.
+                Click the link below to join us today!
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="contact">
         <h2>Contact</h2>
-        <form>
-        <action="">
+        <form action="">
           <span>Email</span>
-          <input type="text" placeholder="joe@example.com" />
+          <input type="email" placeholder="joe@example.com" />
           <span>Message</span>
-          <textarea placeholder="Your message here..."></textarea>
-          <button type="submit">Submit</button>
-        </action>
+          <textarea type="text" placeholder="Your message here..."></textarea>
+          <button type="submit">Send</button>
         </form>
       </section>
     </main>
-    <footer> 
-      <img src="c:\Users\JohnW\Downloads\HTML Practise Assets\HTML Practise Assets\FES.svg" alt="FES"/>
-      <div>
+    <footer>
+      <img
+        class="footer-logo"
+        src="c:\Users\Owner\OneDrive\Desktop\javcss\FES.svg"
+        alt="FES"
+      />
+      <div class="footer-link">
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#discord">Discord</a></li>
-          <li><a href="#Contact">contact</a></li>
-          <li><a href="#Courses">courses</a></li>
+          <li><a class="footer-links" href="#about">About</a></li>
+          <li><a class="footer-links" href="#discord">Discord</a></li>
+          <li><a class="footer-links" href="#Contact">contact</a></li>
+          <li><a class="footer-links" href="#Courses">courses</a></li>
         </ul>
-      <p>&copy; 2024 Frontend Simplified</p>
+      </div>
+    </footer>
+    <p>&copy; 2024 Frontend Simplified</p>
   </body>
 </html>
